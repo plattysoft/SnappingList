@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="item_width">300dp</dimen>
+    <dimen name="padding_item_width">300dp</dimen>
+</resources>
