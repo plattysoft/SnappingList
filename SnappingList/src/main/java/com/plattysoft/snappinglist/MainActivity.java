@@ -62,6 +62,12 @@ public class MainActivity extends Activity {
 
         ExtraItemsAdapter adapter = new ExtraItemsAdapter(NUM_ITEMS);
         items.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        final RecyclerView items = (RecyclerView) findViewById(R.id.item_list);
 
         ViewTreeObserver vto = items.getViewTreeObserver();
         vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
